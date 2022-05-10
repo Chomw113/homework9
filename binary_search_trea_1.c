@@ -107,15 +107,13 @@ int main()
 	return 1;
 }
 
-int initializeBST(Node** h) {
+int initializeBST(Node** h) {  //트리 초기화
 
-	/* if the tree is not empty, then remove all allocated nodes from the tree*/
-	if(*h != NULL)
+	if(*h != NULL)  //비어잇지 않다면 전체를 초기화 한다.
 		freeBST(*h);
 
-	/* create a head node */
-	*h = (Node*)malloc(sizeof(Node));
-	(*h)->left = NULL;	/* root */
+	*h = (Node*)malloc(sizeof(Node));//헤드 노드 생성
+	(*h)->left = NULL;	 //루트임.
 	(*h)->right = *h;
 	(*h)->key = -9999;
 	return 1;
