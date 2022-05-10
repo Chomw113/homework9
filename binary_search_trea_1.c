@@ -20,14 +20,14 @@ typedef struct node {
 int initializeBST(Node** h);
 
 /* functions that you have to implement */
-void inorderTraversal(Node* ptr);	  /* recursive inorder traversal */
-void preorderTraversal(Node* ptr);    /* recursive preorder traversal */
-void postorderTraversal(Node* ptr);	  /* recursive postorder traversal */
-int insert(Node* head, int key);  /* insert a node to the tree */
-int deleteLeafNode(Node* head, int key);  /* delete the leaf node for the key */
-Node* searchRecursive(Node* ptr, int key);  /* search the node for the key */
-Node* searchIterative(Node* head, int key);  /* search the node for the key */
-int freeBST(Node* head); /* free all memories allocated to the tree */
+void inorderTraversal(Node* ptr);	  /* 중위 선회 함수 */
+void preorderTraversal(Node* ptr);    /* 선위 선회 함수 */
+void postorderTraversal(Node* ptr);	  /* 후위 선회 함수 */
+int insert(Node* head, int key);  /* 트리 노드 삽입 */
+int deleteLeafNode(Node* head, int key);  /* 단말 노드 삭제 */
+Node* searchRecursive(Node* ptr, int key);  /* 재귀적인 노드 찾기 */
+Node* searchIterative(Node* head, int key);  /* 반복 노드 찾기 */
+int freeBST(Node* head); /* 전체 노드 삭제 */
 
 int main()
 {
